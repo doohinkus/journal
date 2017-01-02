@@ -3,29 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Journal</title>
-    <script src="js/journal.js" charset="utf-8"></script>
     <!-- Latest compiled and minified CSS -->
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="build/js/app.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="container">
+
       <div>
         <form id="journal">
           <label for="title">Enter Title</label>
-          <input class = "form-control" type="text" name="title"></input>
+          <input class = "form-control title" type="text" name="title"></input>
           <label for="body">Enter Body</label>
-          <textarea class = "form-control" type="text" name="body"></textarea>
+          <textarea class = "form-control body" type="text" name="body"></textarea>
           <br>
           <button class = "btn btn-default" type = "submit">Submit</button>
         </form>
-       <p class="hide">
-         There are <span class="vowels"></span> vowels in your entry.
-       </p>
-       <p class="hide">
-         There are <span class="consonants"></span> consonants in your entry.
-       </p>
+        <h2 class="title"></h2>
+        <p class="teaser">
+
+        </p>
+        <p class="vowels">
+          There are <span class = "text-primary"></span> vowels in your entry.
+        </p>
+        <p class="consonants">
+          There are <span class = "text-primary"></span> consonants in your entry.
+        </p>
+
       </div>
+
     </div><!--end container-->
   </body>
 </html>

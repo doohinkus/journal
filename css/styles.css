@@ -1,3 +1,4 @@
-.hide{
+.vowels, .consonants{
+  /*color: black;*/
   display: none;
 }
